@@ -6,6 +6,30 @@
       mode = [
         "n"
         "x"
+        "o"
+      ];
+      key = "<leader>s";
+      action = "<Plug>(leap-forward)";
+      options = {
+        silent = true;
+      };
+    }
+    {
+      mode = [
+        "n"
+        "x"
+        "o"
+      ];
+      key = "<leader>S";
+      action = "<Plug>(leap-backward)";
+      options = {
+        silent = true;
+      };
+    }
+    {
+      mode = [
+        "n"
+        "x"
       ];
       key = "j";
       action = "v:count == 0 ? 'gj' : 'j'";

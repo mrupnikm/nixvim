@@ -32,6 +32,7 @@ _: {
     ./plugins/ui/bufferline.nix
     ./plugins/ui/lualine.nix
     ./plugins/ui/startup.nix
+    ./plugins/editor/noice.nix
 
     # LSP and formatting
     ./plugins/lsp/lsp.nix
@@ -48,7 +49,6 @@ _: {
     ./plugins/utils/extra_plugins.nix
     ./plugins/utils/mini.nix
     ./plugins/utils/markdown-preview.nix
-    ./plugins/utils/obsidian.nix
     ./plugins/utils/toggleterm.nix
     ./plugins/utils/web-devicons.nix
   ];

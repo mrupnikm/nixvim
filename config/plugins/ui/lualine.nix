@@ -20,7 +20,7 @@ _: {
         lualine_a = [
           {
             __unkeyed-1 = "mode";
-            icon = "";
+            icon = "❄️";
           }
         ];
         lualine_b = [
