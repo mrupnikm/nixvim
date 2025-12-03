@@ -1,5 +1,5 @@
 {
-  description = "xhuyz nixvim configuration";
+  description = "mrupnikm nixvim configuration";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
@@ -17,7 +17,7 @@
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs { inherit system; };
-      config = import ./config  ;
+      config = import ./config;
 
       nvim = nixvim.legacyPackages.${system}.makeNixvimWithModule {
         inherit pkgs;
@@ -29,3 +29,4 @@
 
     };
 }
+
