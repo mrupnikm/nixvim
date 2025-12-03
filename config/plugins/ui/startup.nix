@@ -2,12 +2,22 @@
   plugins.startup = {
     enable = true;
 
-    colors = {
-      background = "#ffffff";
-      foldedSection = "#ffffff";
-    };
+    settings = {
+      parts = [
+        "header"
+        "body"
+      ];
+      options = {
+        paddings = [
+          1
+          3
+        ];
+      };
+      colors = {
+        background = "#ffffff";
+        foldedSection = "#ffffff";
+      };
 
-    sections = {
       header = {
         type = "text";
         oldfilesDirectory = false;
@@ -56,16 +66,6 @@
             "Telescope file_browser"
             "fe"
           ]
-          [
-            " Copilot Chat"
-            "CopilotChat"
-            "ct"
-          ]
-          [
-            "󰧑 SecondBrain"
-            "edit ~/projects/personal/SecondBrain"
-            "sb"
-          ]
         ];
         highlight = "string";
         defaultColor = "";
@@ -73,16 +73,5 @@
       };
     };
 
-    options = {
-      paddings = [
-        1
-        3
-      ];
-    };
-
-    parts = [
-      "header"
-      "body"
-    ];
   };
 }
