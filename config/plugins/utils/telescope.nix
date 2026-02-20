@@ -4,6 +4,10 @@
     extensions = {
       file-browser = {
         enable = true;
+        settings = {
+          hidden = true;
+          respect_gitignore = false;
+        };
       };
       fzf-native = {
         enable = true;
@@ -17,6 +21,21 @@
           };
         };
         sorting_strategy = "ascending";
+        file_ignore_patterns = [
+          "^.git/"
+        ];
+      };
+      pickers = {
+        find_files = {
+          hidden = true;
+        };
+        live_grep = {
+          additional_args = [
+            "--hidden"
+            "--glob"
+            "!.git/*"
+          ];
+        };
       };
     };
     keymaps = {

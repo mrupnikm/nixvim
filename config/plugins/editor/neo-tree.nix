@@ -2,15 +2,14 @@
   plugins.neo-tree = {
     enable = true;
     settings = {
-      defaultComponentConfigs = {
+      default_component_configs = {
         indent = {
-          withExpanders = true;
-          expanderCollapsed = "󰅂";
-          expanderExpanded = "󰅀";
-          expanderHighlight = "NeoTreeExpander";
+          with_expanders = true;
+          expander_collapsed = "󰅂";
+          expander_expanded = "󰅀";
+          expander_highlight = "NeoTreeExpander";
         };
-
-        gitStatus = {
+        git_status = {
           symbols = {
             added = " ";
             conflict = "󰩌 ";
@@ -25,9 +24,18 @@
         };
       };
       filesystem = {
-        bindToCwd = false;
-        followCurrentFile = {
+        bind_to_cwd = false;
+        follow_current_file = {
           enabled = true;
+          leave_dirs_open = true;
+        };
+        filtered_items = {
+          visible = true;
+          hide_dotfiles = false;
+          hide_gitignored = false;
+          hide_by_name = [
+            ".git"
+          ];
         };
       };
       sources = [
@@ -36,7 +44,7 @@
         "git_status"
         "document_symbols"
       ];
-      addBlankLineAtTop = false;
+      add_blank_line_at_top = false;
     };
 
   };
