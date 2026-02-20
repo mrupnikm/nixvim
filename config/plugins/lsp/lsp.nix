@@ -38,6 +38,9 @@
         terraformls = {
           enable = true;
         };
+        dockerls = {
+          enable = true;
+        };
         jsonls = {
           enable = true;
         };

@@ -36,6 +36,25 @@
             "!.git/*"
           ];
         };
+        git_commits = {
+          git_command = [
+            "git"
+            "log"
+            "--pretty=%h %ad %an: %s"
+            "--date=short"
+            "--"
+            "."
+          ];
+        };
+        git_bcommits = {
+          git_command = [
+            "git"
+            "log"
+            "--pretty=%h %ad %an: %s"
+            "--date=short"
+            "--follow"
+          ];
+        };
       };
     };
     keymaps = {
@@ -103,6 +122,12 @@
         action = "git_commits";
         options = {
           desc = "Commits";
+        };
+      };
+      "<leader>gf" = {
+        action = "git_bcommits";
+        options = {
+          desc = "File commits";
         };
       };
       "<leader>gs" = {
