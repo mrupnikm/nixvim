@@ -42,6 +42,7 @@ _: {
     # Git
     ./plugins/git/lazygit.nix
     ./plugins/git/gitsigns.nix
+    ./plugins/git/blame.nix
 
     # Utils
     ./plugins/utils/telescope.nix
