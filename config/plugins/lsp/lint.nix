@@ -9,8 +9,7 @@
     lintersByFt = {
       terraform = [ "tflint" ];
       dockerfile = [ "hadolint" ];
-      ansible = [ "ansible_lint" ];
-      yaml = [ "ansible_lint" ];
+      "yaml.ansible" = [ "ansible_lint" ];
     };
     linters = {
       tflint = {
