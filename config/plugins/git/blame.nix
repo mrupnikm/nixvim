@@ -8,7 +8,7 @@
     require("blame").setup({
       date_format = "%Y-%m-%d",
       virtual_style = "right_align",
-      merge_consecutive = true,
+      merge_consecutive = false,
     })
   '';
 
